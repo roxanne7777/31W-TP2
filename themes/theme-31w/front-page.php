@@ -17,11 +17,7 @@
     <div class="principal__conteneur">
       <?php if (have_posts()): ?>
         <?php while (have_posts()) :  the_post(); ?>
-
-          <article class="principal__article">
-            <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-            <p><?php echo wp_trim_words(get_the_excerpt(), 20, null); ?></p>
-          </article>
+          <?php get_template_part('template-parts/article', 'nouveaute');?>
         <?php endwhile; ?>
     </div>
   <?php endif ?>
