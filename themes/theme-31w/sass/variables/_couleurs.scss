@@ -1,0 +1,22 @@
+$couleur1: --couleur1;
+$couleur2: --couleur2;
+$couleur3: --couleur3;
+
+@mixin regle_couleur($selecteur, $couleur) {
+    #{$selecteur} {
+        color: var(#{$couleur});
+    }
+}
+
+@mixin regle_couleur_back($selecteur, $couleur) {
+  #{$selecteur} {
+    background-color: var(#{$couleur});
+  }
+}
+
+@mixin regle_couleur_avant_arriere($selecteur, $avant, $arriere) {
+  #{$selecteur} {
+    color: var(#{$avant});
+    background-color: var(#{$arriere});
+  }
+}

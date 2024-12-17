@@ -1,0 +1,49 @@
+:root {
+  --couleur1: orange;
+  --couleur2: lemonchiffon;
+  --couleur3: rgb(145, 67, 163);
+}
+
+html,
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.global {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.body__global {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*
+.entete {
+  background-color: orange;
+}*/
+
+@include regle_couleur_back(".entete", $couleur1);
+
+.principal {
+  background-color: lemonchiffon;
+}
+
+.pied {
+  background-color: rgb(145, 67, 163);
+}
+
+.pied__global {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  div {
+    padding: 10px;
+  }
+}

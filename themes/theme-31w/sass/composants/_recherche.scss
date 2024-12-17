@@ -1,0 +1,38 @@
+/*
+
+.recherche__input {
+
+}
+
+.recherche__bouton {
+
+}
+
+.recherche__bouton_img {
+
+}*/
+
+.recherche {
+    &__input,
+    &__bouton {
+        background-color: rgba(0,0,0, 0.3);
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        &:hover {
+            background-color: rgba(0,0,0, 0.2);
+        }
+        &:focus {
+            background-color: whitesmoke;
+        }
+    }
+    &__input::placeholder {
+        color: red;
+        font-size: 1.5rem;
+    }
+    /*&__bouton {
+        img {
+
+        }
+    }*/
+}

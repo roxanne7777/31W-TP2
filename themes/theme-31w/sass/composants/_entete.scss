@@ -1,0 +1,21 @@
+.entete__global {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entete__titre h1,
+.entete__titre h2 {
+    margin: 0;
+}
+
+.entete__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.custom-logo {
+    max-width: 150px;
+    height: auto;
+}

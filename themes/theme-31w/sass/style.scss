@@ -1,0 +1,30 @@
+/*
+Theme Name: Theme 31w
+Theme URI: 
+Author: Roxanne Auclair
+Author URI: https://wordpress.org/
+Description: Thème de base 
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-31w
+*/
+
+/*--------------------------------------------- Variables et mixin  */
+@import "variables/couleurs";
+/*--------------------------------------------- normalize  */
+@import "normalize/normalize";
+/*--------------------------------------------- layout  */
+@import "layout/page";
+/*--------------------------------------------- base  */
+@import "base/heading";
+//@import "base/espacement";
+//@import "base/lien";
+//@import "base/list";
+
+/* --------------------------------------------- composants */
+@import "composants/bloc";
+@import "composants/navigation";
+@import "composants/recherche";
+@import "composants/entete";

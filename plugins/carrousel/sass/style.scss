@@ -1,0 +1,80 @@
+@media screen and (max-width: 400px) {
+    .carrousel {
+        transform: scale(1);
+        width: 100vw;
+    }
+}
+
+.carrousel {
+  position: absolute;
+  transform: scale(0);
+  transition: transform 0.5s;
+  top: 25vh;
+  left: 25vw;
+  width: 50vw;
+  height: 50vh;
+  background-color: mediumaquamarine;
+  border: 3px solid black;
+  z-index: 9;
+}
+
+.carrousel__x {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 12;
+}
+
+.carrousel__x,
+.carrousel__gauche,
+.carrousel__droite {
+    background-color: lemonchiffon;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.carrousel--ouvrir {
+  transform: scale(1);
+}
+
+.carrousel__gauche,
+.carrousel__droite {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.carrousel__gauche {
+  left: 0;
+}
+
+.carrousel__droite {
+  right: 0;
+}
+
+.carrousel__figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carrousel__img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.carrousel__img--visible {
+  opacity: 1;
+}
+
+/*.galerie__radio {
+    background-color: lemonchiffon;
+    border: 2px solid purple;
+}*/

@@ -1,0 +1,21 @@
+.menu-principal-container {
+  //nav
+  .menu {
+    //ul
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    .menu-item {
+      //li
+
+      a {
+        display: block;
+        padding: 3px;
+
+        &:hover {
+            background-color: aqua;
+        }
+      }
+    }
+  }
+}

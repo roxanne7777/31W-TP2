@@ -1,0 +1,14 @@
+.principal__conteneur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.principal__article {
+    border: 1px solid #aaa;
+    flex: 1 1 300px;
+    padding: 10px;
+}
+
