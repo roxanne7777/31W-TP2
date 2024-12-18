@@ -187,6 +187,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -270,6 +271,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
+  appearance: textfield;
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -331,6 +333,7 @@ template {
 
 html,
 body {
+  background-color: lemonchiffon;
   margin: 0;
 }
 
@@ -350,10 +353,6 @@ body {
   gap: 10px;
 }
 
-/*
-.entete {
-  background-color: orange;
-}*/
 .entete {
   background-color: var(--couleur1);
 }
@@ -516,4 +515,31 @@ p {
 .custom-logo {
   max-width: 150px;
   height: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 100px 20px;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.hero__cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: orange;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero__cta:hover {
+  background: #005177;
 }/*# sourceMappingURL=style.css.map */

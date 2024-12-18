@@ -6,6 +6,7 @@
 
 html,
 body {
+  background-color: lemonchiffon;
   margin: 0;
 }
 * {
@@ -23,11 +24,6 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-
-/*
-.entete {
-  background-color: orange;
-}*/
 
 @include regle_couleur_back(".entete", $couleur1);
 

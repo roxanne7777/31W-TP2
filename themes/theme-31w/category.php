@@ -8,7 +8,7 @@
 
   <main class="principal">
     <section class="global">
-        <h2>Liste de cours - category.php</h2>
+        <h2><?php single_cat_title() ?></h2>
         <div class="principal__conteneur">
         <?php if (have_posts()): ?>
             <?php while (have_posts()): the_post(); ?>
