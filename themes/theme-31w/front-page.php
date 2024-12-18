@@ -37,8 +37,9 @@
 
   </section>
 
-  <section id="inscription" class=" global filtre">
+  <section id="filtre" class=" global filtre">
         <!-- Un appel à rest api filtre -->
+        <!-- <?php echo do_shortcode('[extraire_destination]');?> -->
   </section>
 
 </main>

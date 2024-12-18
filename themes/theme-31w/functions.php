@@ -63,6 +63,15 @@ add_action('customize_register', 'theme_31w_customize_register');
 
 /*--------------------------------------------------------------------------------------*/
 
+function theme_31w_customize_register_social_icons($wp_customize) {
+    $wp_customize->add_section('social_icons_section', array(
+        'title' =>__('Icones sociales', 'theme_31w'),
+        'priority' => 40
+    ));
+}
+
+/*--------------------------------------------------------------------------------------*/
+
 function ajouter_style()
 {
 
@@ -97,11 +106,11 @@ add_action("after_setup_theme", "ajout_options");
  * Dans ce cas ci nous filtrons la requête de la page d'accueil
  * @param WP_query  $query la requête principal de WP
  */
-// function modifie_requete_principal( $query ) {
-//     if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
-//     $query->set( 'category_name', 'cours' );
-//     $query->set( 'orderby', 'title' );
-//     $query->set( 'order', 'ASC' );
-//     }
-// }
-// add_action( 'pre_get_posts', 'modifie_requete_principal' );
+function modifie_requete_principal( $query ) {
+    if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+    $query->set( 'category_name', 'favoris' );
+    $query->set( 'orderby', 'title' );
+    $query->set( 'order', 'ASC' );
+    }
+}
+add_action( 'pre_get_posts', 'modifie_requete_principal' );
