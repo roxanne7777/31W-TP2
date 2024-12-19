@@ -4,7 +4,7 @@
       <div>
           Auteur: Roxanne Auclair
           <h5><a href="https://github.com/roxanne7777/31W-TP2/tree/ef">Lien github vers la branche ef</a></h5>
-          <h5><a href="">Lien github vers le dépôt de l'extension "filtre-pays"</a></h5>
+          <h5><a href="https://github.com/roxanne7777/filtre-pays">Lien github vers le dépôt de l'extension "filtre-pays"</a></h5>
       </div>
       <div>
         <p>Tp2 et épreuve finale</p>
