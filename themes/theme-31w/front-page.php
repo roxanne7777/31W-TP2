@@ -30,6 +30,7 @@
 
   <section id="filtre" class=" global filtre">
     <?php echo do_shortcode('[extraire_article]');?>
+    <div class="filtre__articles"></div>
   </section>
 
 </main>
