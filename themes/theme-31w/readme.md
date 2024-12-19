@@ -2,13 +2,13 @@
 
 ## Introduction à un système de gestion de contenu
 
-## TP 2: Club de voyage
+## Épreuve finale
 
 ### Objectifs:
-- Réaliser un site WordPress pour un club de voyage. Le club offre à ses membres des voyages vers des destinations originales partout dans le monde.
-- Chaque destination est catégorisée pour permettre aux membres de se renseigner de façon spécifique selon leur gout.
-- Le design général permettra de mettre en valeur les offres de voyages réservées à ses membres.
-- Déployer votre projet sur le serveur Web hosting Canada.
+- Créer une nouvelle page basée sur un template
+- Afficher les destinations par pays
+
+Ajouter une page template-pays contenant une entête, une galerie et des champs personnalisés. Ajouter une extension filtre-pays.
 
 Auteure: Roxanne Auclair  
 adresse whc: https://gftnth00.mywhc.ca/31w01/
