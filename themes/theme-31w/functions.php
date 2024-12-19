@@ -72,14 +72,6 @@ function theme_31w_customize_register_social_icons($wp_customize) {
 
 /*--------------------------------------------------------------------------------------*/
 
-function ajouter_donnees_js() {
-    wp_enqueue_script('mon-script', get_template_directory_uri() . '/js/scripts.js', array(), null, true);
-    wp_localize_script('mon-script', 'siteData', array(
-        'apiUrl' => get_site_url() . '/wp-json/wp/v2',
-    ));
-}
-add_action('wp_enqueue_scripts', 'ajouter_donnees_js');
-
 function ajouter_style()
 {
 
