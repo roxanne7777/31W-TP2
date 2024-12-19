@@ -28,7 +28,7 @@
     <?php get_template_part('template-parts/formulaire', 'inscription');?>
   </section>
 
-  <section id="filtre" class=" global filtre">
+  <section id="filtre" class=" global filtre__articles">
     <?php echo do_shortcode('[extraire_article]');?>
   </section>
 
