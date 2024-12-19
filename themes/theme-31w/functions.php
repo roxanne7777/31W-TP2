@@ -98,6 +98,26 @@ function ajout_options() {
 
 add_action("after_setup_theme", "ajout_options");
 
+function afficher_galerie_shortcode($atts) {
+    // Récupérer l'ID de la page
+    $page_id = isset($atts['page_id']) ? $atts['page_id'] : get_the_ID();
+
+    // Récupérer le contenu de la page
+    $content = get_post_field('post_content', $page_id);
+
+    // Utiliser une expression régulière pour extraire uniquement la galerie
+    preg_match('/<!-- wp:gallery.*?-->.*?<!-- \/wp:gallery -->/s', $content, $matches);
+
+    // Si une galerie est trouvée, retourner le contenu de la galerie
+    if (isset($matches[0])) {
+        return $matches[0]; // Affiche uniquement la galerie
+    }
+
+    return ''; // Si aucune galerie n'est trouvée, retourner une chaîne vide
+}
+
+add_shortcode('afficher_galerie', 'afficher_galerie_shortcode');
+
 /*------------------------------------------------------ Modifier la requête principale */
 /**
  * Modifie la requete principale de WordPress avant qu'elle soit exécuté
