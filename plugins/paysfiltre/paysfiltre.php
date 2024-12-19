@@ -1,25 +1,25 @@
 <?php
 /*
-plugin name: Pays filtre
+plugin name: Filtre Pays
 author: Roxanne Auclair
-description: Une extension qui permettra de filtrer nos articles
+description: Une extension qui permettra de filtrer par pays
 */ 
 
 function charger_scripts_css(){
  
     $version_css = filemtime(plugin_dir_path(__FILE__) . "/style.css");
-    $version_js = filemtime(plugin_dir_path(__FILE__) . "/js/filtrepost.js");
+    $version_js = filemtime(plugin_dir_path(__FILE__) . "/js/paysfiltre.js");
  
     wp_enqueue_style(
-        "filtrepost",        
+        "paysfiltre",        
         plugin_dir_url(__FILE__) . "/style.css",
         array(),
         $version_css
     );  
  
     wp_enqueue_script(
-        "filtrepost",      
-        plugin_dir_url(__FILE__) . "/js/filtrepost.js",
+        "paysfiltre",      
+        plugin_dir_url(__FILE__) . "/js/paysfiltre.js",
         array(),
         $version_js,
         true
