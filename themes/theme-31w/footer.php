@@ -3,10 +3,11 @@
     <section class="global pied__global">
       <div>
           Auteur: Roxanne Auclair
-          <h5><a href="https://github.com/roxanne7777/31w/tree/exercice02">Lien github</a></h5>
+          <h5><a href="https://github.com/roxanne7777/31W-TP2/tree/ef">Lien github vers la branche ef</a></h5>
+          <h5><a href="">Lien github vers le dépôt de l'extension "filtre-pays"</a></h5>
       </div>
       <div>
-        <p>Les objectifs de l'exercice sont d'ajouter les modèles front-page.php et search.php, d'ajouter le gabarit searchform.php, d'améliorer la structure Sass, d'utiliser les variables ainsi que les "Mixin".</p>
+        <p>Tp2 et épreuve finale</p>
         <img src="https://www.svgrepo.com/show/530601/hot-air-balloon.svg" height="75" width="75">
       </div>
       <div>
