@@ -51,7 +51,7 @@
     });
   }
 
-  carrousel__x.addEventListener("click", function () {
+  carrousel__x.addEventListener("click", function() {
     carrousel.classList.remove("carrousel--ouvrir");
     console.log("fermer");
   });
