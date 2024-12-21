@@ -13,7 +13,7 @@
   ?>
 
   <section class="global nouveau">
-    <h2>Liste de cours - Front-page.php</h2>
+    <h2>Destinations favorites</h2>
     <div class="principal__conteneur">
       <?php if (have_posts()): ?>
         <?php 
@@ -37,6 +37,7 @@
   </section>
 
   <section id="filtre" class=" global filtre">
+    <h2>Destinations par catégorie</h2>
     <?php echo do_shortcode('[extraire_article]');?>
     <div class="filtre__articles"></div>
   </section>

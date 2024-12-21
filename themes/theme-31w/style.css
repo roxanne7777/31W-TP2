@@ -451,6 +451,10 @@ p {
   position: relative;
 }
 
+.filtre__articles {
+  margin-top: 40px;
+}
+
 .menu-principal-container .menu {
   display: flex;
   list-style-type: none;
@@ -536,16 +540,27 @@ p {
   height: 100vh;
 }
 
+.hero__contenu {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+}
+
 .hero h1 {
   margin: 0;
 }
 
+.hero__subtitle {
+  font-size: 30px;
+}
+
 .hero__cta {
   display: inline-block;
-  margin-top: 20px;
   padding: 10px 20px;
   background: orange;
   color: #fff;
+  font-size: 24px;
+  font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -557,7 +572,7 @@ p {
 .hero__social-icons {
   display: flex;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .hero__social-icons .social-icon {

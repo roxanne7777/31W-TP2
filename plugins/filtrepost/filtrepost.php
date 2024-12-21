@@ -34,7 +34,7 @@ function genere_boutons() {
     foreach($categories as $elm) {
         $nom = $elm->name;
         $id = $elm->term_id;
-        $contenu .= "<button data-id='$id'>$nom</button>";
+        $contenu .= "<button data-id='$id' class='bouton__categorie'>$nom</button>";
     }
     return "<div class='filtre__bouton'>$contenu</div>";
 }

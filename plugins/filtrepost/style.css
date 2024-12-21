@@ -1,3 +1,13 @@
 .filtre__bouton {
-  background-color: aquamarine;
+  margin-top: 40px;
+}
+
+.bouton__categorie {
+  margin: 0 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(145, 67, 163);
+  color: white;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

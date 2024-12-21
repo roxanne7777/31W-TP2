@@ -16,7 +16,7 @@
               <h5><a href="https://github.com/roxanne7777/31W-TP2/tree/ef">Lien github vers la branche ef</a></h5>
               <h5><a href="https://github.com/roxanne7777/filtre-pays">Lien github vers le dépôt de l'extension "filtre-pays"</a></h5>
               <p>Auteur: Roxanne Auclair</p>
-              <p>Tp2 et épreuve finale</p>
+              <p>Tp2 et épreuve finale <strong style="color: lemonchiffon">Note: les extensions "filtre post" et "filtre pays" ne peuvent pas être activées en même temps car cela provoque une erreur fatale.</strong></p>
           </div>
       </section>
       <section class="pied__droite">
