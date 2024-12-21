@@ -16,12 +16,20 @@
     <h2>Liste de cours - Front-page.php</h2>
     <div class="principal__conteneur">
       <?php if (have_posts()): ?>
-        <?php while (have_posts()) :  the_post(); ?>
-          <?php get_template_part('template-parts/article', 'nouveaute');?>
-          
-        <?php endwhile; ?>
-    </div>
-  <?php endif ?>
+        <?php 
+          $affiche_galerie = false;
+          while (have_posts()) :  the_post(); ?>
+          <?php if (in_category('galerie') && !$affiche_galerie): ?>
+                    <?php 
+                    get_template_part('template-parts/article', 'galerie');
+                    $affiche_galerie = true; 
+                    ?>
+                <?php elseif (in_category('favoris')): ?>
+                    <?php get_template_part('template-parts/article', 'nouveaute'); ?>
+                <?php endif; ?>
+            <?php endwhile; ?>
+      </div>
+      <?php endif; ?>
   </section>
 
   <section id="inscription" class="global inscription">
