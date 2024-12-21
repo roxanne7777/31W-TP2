@@ -7,9 +7,9 @@
   height: 100vh;
 }
 
-.hero__contenu {
-  display: flex;
-}
+// .hero__contenu {
+//   display: flex;
+// }
 
 .hero h1 {
   margin: 0;
@@ -19,7 +19,7 @@
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: purple;
+  background: orange;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -33,7 +33,6 @@
   display: flex;
   gap: 15px;
   margin-top: 20px;
-  flex-basis: 20%;
 }
 
 .hero__social-icons .social-icon {

@@ -374,6 +374,10 @@ body {
   padding: 10px;
 }
 
+.principal__article .galerie {
+  position: relative;
+}
+
 /*--------------------------------------------- base  */
 h1 {
   font-size: clamp(2rem, -0.75rem + 4.8vw, 4rem);
@@ -542,4 +546,22 @@ p {
 
 .hero__cta:hover {
   background: #005177;
+}
+
+.hero__social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hero__social-icons .social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.hero__social-icons .social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
