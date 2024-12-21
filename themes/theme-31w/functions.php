@@ -64,11 +64,43 @@ add_action('customize_register', 'theme_31w_customize_register');
 /*--------------------------------------------------------------------------------------*/
 
 function theme_31w_customize_register_social_icons($wp_customize) {
+    // Ajouter la section des icônes sociales
     $wp_customize->add_section('social_icons_section', array(
-        'title' =>__('Icones sociales', 'theme_31w'),
-        'priority' => 40
+        'title' => __('Icônes sociales', 'theme_31w'),
+        'priority' => 40,
     ));
+
+    // Facebook Icon
+    $wp_customize->add_setting('social_facebook_icon', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'social_facebook_icon', array(
+        'label' => __('Icône Facebook', 'theme_31w'),
+        'section' => 'social_icons_section',
+    )));
+
+    $wp_customize->add_setting('social_tiktok_icon', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'social_tiktok_icon', array(
+        'label' => __('Icône Tiktok', 'theme_31w'),
+        'section' => 'social_icons_section',
+    )));
+
+    // Instagram Icon
+    $wp_customize->add_setting('social_instagram_icon', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'social_instagram_icon', array(
+        'label' => __('Icône Instagram', 'theme_31w'),
+        'section' => 'social_icons_section',
+    )));
+
 }
+add_action('customize_register', 'theme_31w_customize_register_social_icons');
 
 /*--------------------------------------------------------------------------------------*/
 

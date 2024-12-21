@@ -31,6 +31,7 @@ function enfile_css_script() {
         true
     );
 }
+add_action("wp_enqueue_scripts", "enfile_css_script");
 
 function generer_carrousel(){
     $chaine = '
@@ -45,10 +46,7 @@ function generer_carrousel(){
     return $chaine;
 }
 
-add_shortcode("carrousel", function($atts, $content = null) {
-    enfile_css_script(); 
-    return generer_carrousel();
-});
+add_shortcode("carrousel", "generer_carrousel");
 ?>
 
 
