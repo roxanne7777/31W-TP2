@@ -44,6 +44,8 @@ body {
   }
 }
 
-.principal__article .galerie {
-  position: relative;
+.pied__gauche, 
+.pied__droite {
+  display: flex;
+  flex-direction: column;
 }

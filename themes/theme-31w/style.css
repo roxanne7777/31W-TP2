@@ -374,8 +374,10 @@ body {
   padding: 10px;
 }
 
-.principal__article .galerie {
-  position: relative;
+.pied__gauche,
+.pied__droite {
+  display: flex;
+  flex-direction: column;
 }
 
 /*--------------------------------------------- base  */
@@ -443,6 +445,10 @@ p {
   border: 1px solid #aaa;
   flex: 1 1 300px;
   padding: 10px;
+}
+
+.principal__article .galerie {
+  position: relative;
 }
 
 .menu-principal-container .menu {
