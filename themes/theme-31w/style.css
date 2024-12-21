@@ -463,9 +463,16 @@ p {
 .menu-principal-container .menu .menu-item a {
   display: block;
   padding: 3px;
+  text-decoration: none;
 }
 .menu-principal-container .menu .menu-item a:hover {
-  background-color: aqua;
+  background-color: #005177;
+  color: lemonchiffon;
+}
+.menu-principal-container .menu .current-menu-item a {
+  background-color: rgb(145, 67, 163);
+  font-weight: bold;
+  color: orange;
 }
 
 /*
